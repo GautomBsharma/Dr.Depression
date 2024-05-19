@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "950074876520",
+    "firebase_url": "https://depression-reducer-default-rtdb.firebaseio.com",
+    "project_id": "depression-reducer",
+    "storage_bucket": "depression-reducer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950074876520:android:427f95d62edc001b98d1dd",
+        "android_client_info": {
+          "package_name": "com.mksolution.depressionreducer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChnw_V42HCydjcj8clSWw_BHpDYYn2l7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
