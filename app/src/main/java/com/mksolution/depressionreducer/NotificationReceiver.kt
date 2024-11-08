@@ -46,7 +46,7 @@ class NotificationReceiver : BroadcastReceiver() {
     private fun prevNextSong(increment: Boolean, context: Context){
         setSongPosition(increment = increment)
         PlayerActivity.musicService!!.mediaPlayer!!.setDataSource(PlayerActivity.musicListPA[PlayerActivity.songPosition].path)
-        PlayerActivity.musicService.mediaPlayer.prepare()
+        //PlayerActivity.musicService.mediaPlayer.prepare()
         Glide.with(context)
             .load(PlayerActivity.musicListPA[PlayerActivity.songPosition].artUri)
             .apply(RequestOptions().placeholder(R.drawable.music).centerCrop())

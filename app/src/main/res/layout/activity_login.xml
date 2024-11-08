@@ -108,7 +108,7 @@ tools:context=".LoginActivity">
             app:endIconMode="password_toggle"
             app:helperText="Enter six or more Character"
 
-            app:helperTextTextColor="@color/teal_200"
+            app:helperTextTextColor="@color/redBack"
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

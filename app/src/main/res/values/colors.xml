@@ -12,7 +12,7 @@
     <color name="gray1">#F1C9C9</color>
     <color name="startBack">#F55656</color>
     <color name="breathcolor2">#EDC992</color>
-    <color name="purple">#ff4dff</color>
+    <color name="purple">#F55B91</color>
     <color name="grad">#ECF0F1</color>
     <color name="grad2">#AEB6BF</color>
     <color name="grad3">#FA6722</color>
@@ -24,9 +24,14 @@
     <color name="raund2">#4596F1</color>
     <color name="redBack">#F7344C</color>
     <color name="treakBack">#1380F8</color>
+    <color name="list_back">#03C4FA</color>
+    <color name="purpled">#EC5087</color>
+    <color name="text_color">#05365b</color>
 
-    <color name="cool_blue">#0091EA</color>
+    <color name="cool_blue">#2EA8F3</color>
     <color name="cool_green">#64DD17</color>
     <color name="cool_pink">#F50057</color>
     <color name="yellow">#FFD600</color>
+    <color name="semi_transparent_gray">#80000000</color>
+    <color name="back_brath">#ea67a1</color>
 </resources>

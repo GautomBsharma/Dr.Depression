@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/gray1"
+tools:context=".Fragments.ChatBotFragment">
+
+<!-- Title -->
+<TextView
+    android:id="@+id/textView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="30dp"
+    android:fontFamily="serif"
+    android:padding="3dp"
+    android:text="Virtual Friend"
+    android:textColor="@color/text_color"
+    android:textSize="19sp"
+    android:textStyle="bold|italic"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+<com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/lottieAnimationViewBotsmall"
+    android:layout_width="110dp"
+    android:layout_height="110dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView6"
+    android:visibility="gone"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_rawRes="@raw/chatboot" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationViewBotfull"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/chatboot" />
+
+<!-- ScrollView to allow scrolling through the messages -->
+<ScrollView
+    android:id="@+id/scrollBot"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:visibility="gone"
+    app:layout_constraintTop_toBottomOf="@+id/lottieAnimationViewBotsmall"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/editTextContainer">
+
+    <!-- Inner container to hold user and bot messages -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- User Message -->
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/user_back"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:text="User Message"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Bot Message -->
+        <TextView
+            android:id="@+id/tvBot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bot_back"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:padding="6dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="16sp"
+            android:textColor="#05386f"
+            android:text="Bot Response "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@+id/tvUser" />
+
+        <!-- Guidelines for margin -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+<!-- Input Area -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/editTextContainer"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="4dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <!-- EditText for User Input -->
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_bot_back"
+        android:hint="Let’s talk!"
+        android:inputType="textMultiLine"
+        android:minHeight="40dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!-- Send Button -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewSend"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/img_1"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

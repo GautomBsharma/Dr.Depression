@@ -43,4 +43,30 @@
     <string name="play_next_note">Tip: Long Press On Any Video To Add It Into Play Next. &#128522; </string>
     <string name="favourite_note">Tip: Play Music And Click On &#10084; To Add It Into Favourites. </string>
     <string name="playlist_note">Tip: Click On ➕ To Create New Playlist. </string>
+
+    <string name="quote1">"The only way to do great work is to love what you do."
+— Steve Jobs</string>
+    <string name="quote2">"Don't watch the clock; do what it does. Keep going."
+— Sam Levenson</string>
+    <string name="quote3">"Success usually comes to those who are too busy to be looking for it."
+— Henry David Thoreau</string>
+    <string name="quote4">“Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.” \n– Buddha</string>
+    <string name="quote5">"Believe you can and you're halfway there."
+— Theodore Roosevelt</string>
+    <string name="quote6">"Life is really simple, but we insist on making it complicated."
+— Confucius</string>
+
+    <string name="breath">Breathing reduces depression by calming the nervous system, lowering cortisol, enhancing mindfulness, and improving mood.</string>
+
+    <string name="meditation">Meditation reduces depression by enhancing mindfulness, reducing stress, and promoting emotional balance and resilience.</string>
+    <string name="cheat_ai">"Chat with our AI chatbot to reduce loneliness and find a friendly companion anytime!"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="texthintbrath">Box breathing is a calming technique that involves inhaling, holding, exhaling, and pausing for 4 seconds each cycle.</string>
+
+    <string name="texthintbrathadv">Relaxation Breathing is a calming technique that involves inhaling, holding, exhaling, and pausing for 4 7 8 seconds each cycle.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
